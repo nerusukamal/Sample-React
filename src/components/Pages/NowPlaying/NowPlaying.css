@@ -1,0 +1,56 @@
+.movie-list-desktop{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-list-mobile{
+margin-top: 1.5rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 3rem
+}
+
+form{
+  display: flex;
+}
+
+.search{
+  min-width: 300px;
+  min-height: 40px;
+  border-radius: 10px;
+  padding: 0 1.125rem;
+  margin-right: 0.5rem;
+}
+
+.search-btn{
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #fff;
+  color: #282c34;
+}
+
+.movie-list-mobile{
+display: none;
+}
+
+@media screen and (max-width: 480px){
+.movie-list-desktop{
+  display: none;
+}
+.movie-list-mobile{
+  display: block;
+}
+.header-container{
+  flex-direction: column;
+  margin: 0;
+}
+.search{
+  min-width:230px
+}
+}
